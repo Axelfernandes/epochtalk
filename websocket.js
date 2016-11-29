@@ -13,4 +13,6 @@ module.exports = socketcluster.connect({
   },
   secure: config.websocketSecure
 })
-.on('error', function(){});
+.on('error', function(error){
+  console.log(error);
+});
